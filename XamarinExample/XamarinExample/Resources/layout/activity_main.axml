@@ -3,5 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_weight="1">
+
+	<TextView 
+		android:id="@+id/textView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Xamarin Example"
+		android:gravity="center"
+		android:textSize="30dp"
+		android:layout_marginTop="20dp"
+		android:textColor="#3498db"		
+	/>
+	
+	<EditText 
+		android:id="@+id/txt_username"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Your username"
+		android:layout_marginTop="80dp"
+		android:layout_below="@+id/textView1"
+	/>
+	<EditText 
+		android:id="@+id/txt_password"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Your password"
+		android:layout_below="@+id/txt_username"
+	/>
+	<Button 
+		android:id="@+id/btn_submit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/txt_password"
+		android:background="#f1c40f"
+		android:textColor="#fff"
+		android:text="Sign in"		
+	/>
+	<TextView 
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Don't have account?"
+		android:layout_marginTop="15dp"
+		android:layout_below="@+id/btn_submit"			
+	/>
+	<Button 
+		android:id="@+id/btn_register"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Sign Up"
+		android:background="#2ecc71"
+		android:textColor="#fff"
+		android:layout_below="@+id/textView2"
+	/>
 </RelativeLayout>
